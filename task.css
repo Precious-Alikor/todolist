@@ -1,0 +1,114 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#main {
+    width: 500px;
+    height: 700px;
+    background-color: rgb(240, 211, 157);
+    border-radius: 20px;
+    margin: 50px auto;
+    border: 1px solid rgb(100, 99, 99);
+    display: flex;
+    flex-direction: column;
+}
+
+.header-design {
+    width: 500px;
+    height: 80px;
+    /* border-bottom: 1px dashed rgb(100, 99, 99); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.subheader-design {
+    width: 30px;
+    height: 30px;
+    border: 5px solid rgb(34, 34, 34);
+    margin: auto 0;
+    border-radius: 50%;
+    margin: auto 0;
+}
+
+.title{
+    height: 50px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    font-size: 40px;
+    border-bottom: 1px dashed rgb(100, 99, 99);
+}
+
+#todoactivity{
+    height: 415px;
+    overflow: auto;
+    /* border: 1px solid black; */
+}
+
+#todocontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    /* height: 40px; */
+    border-bottom: 1px solid rgb(187, 164, 164);
+    margin: 0 auto;
+}
+
+#todocontainer p {
+    margin-right: 300px;
+    /* font-size: 20px */
+}
+
+#todocontainer input[type=checkbox] {
+    width: 30px;
+    height: 20px;
+}
+
+#todocontainer input[type=checkbox]:checked+p {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.bin{
+    color: black;
+}
+
+.inputfield {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: auto;
+    margin-bottom: 30px; */
+    /* border: 1px solid black; */
+}
+
+h2 {
+    text-align: center;
+}
+
+input[type=text] {
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+}
+
+input[type=text]:focus{
+    border-bottom: 2px solid rgb(161, 158, 158);
+}
+
+#btn {
+    width: 70px;
+    margin: 20px 200px 0 220px;
+    padding: 8px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
